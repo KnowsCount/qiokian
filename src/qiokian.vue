@@ -1,78 +1,82 @@
-<script>
-
-export default /*#__PURE__*/{
-  name: 'Qiokian', // vue component name
-  data() {
-    return {
-      counter: 5,
-      initCounter: 5,
-      message: {
-        action: null,
-        amount: null,
-      },
-    };
-  },
-  computed: {
-    changedBy() {
-      const { message } = this;
-      if (!message.action) return 'initialized';
-      return `${message.action} ${message.amount || ''}`.trim();
-    },
-  },
-  methods: {
-    increment(arg) {
-      const amount = (typeof arg !== 'number') ? 1 : arg;
-      this.counter += amount;
-      this.message.action = 'incremented by';
-      this.message.amount = amount;
-    },
-    decrement(arg) {
-      const amount = (typeof arg !== 'number') ? 1 : arg;
-      this.counter -= amount;
-      this.message.action = 'decremented by';
-      this.message.amount = amount;
-    },
-    reset() {
-      this.counter = this.initCounter;
-      this.message.action = 'reset';
-      this.message.amount = null;
-    },
-  },
-};
-</script>
-
+<!--
+ * @Date: 10/02/2021 20.07.50 +0800
+ * @Author: KnowsCount
+ * @LastEditTime: 11/06/2021 22.41.21 +0800
+ * @FilePath: /qiokian/src/qiokian.vue
+-->
 <template>
-  <div class="qiokian">
-    <p>The counter was {{ changedBy }} to <b>{{ counter }}</b>.</p>
-    <button @click="increment">
-      Click +1
-    </button>
-    <button @click="decrement">
-      Click -1
-    </button>
-    <button @click="increment(5)">
-      Click +5
-    </button>
-    <button @click="decrement(5)">
-      Click -5
-    </button>
-    <button @click="reset">
-      Reset
-    </button>
-  </div>
+	<div></div>
 </template>
 
-<style scoped>
-  .qiokian {
-    display: block;
-    width: 400px;
-    margin: 25px auto;
-    border: 1px solid #ccc;
-    background: #eaeaea;
-    text-align: center;
-    padding: 25px;
-  }
-  .qiokian p {
-    margin: 0 0 1em;
-  }
-</style>
+<script>
+export default {
+	data() {
+		return {
+			live2d_path:
+				'https://cdn.jsdelivr.net/gh/knowscount/live2d-widget@latest/',
+			cdnPath: 'https://cdn.jsdelivr.net/gh/fghrsh/live2d_api/',
+		}
+	},
+	mounted() {
+		this.__init()
+	},
+	methods: {
+		__init() {
+			this.loadAssets()
+		},
+		loadAssets() {
+			// 加载 waifu.css live2d.min.js waifu-tips.js
+			if (screen.width >= 768) {
+				Promise.all([
+					this.loadExternalResource(
+						this.live2d_path + 'waifu.css',
+						'css'
+					),
+					this.loadExternalResource(
+						this.live2d_path + 'live2d.min.js',
+						'js'
+					),
+					this.loadExternalResource(
+						this.live2d_path + 'waifu-tips.js',
+						'js'
+					),
+				]).then(() => {
+					initWidget({
+						waifuPath: this.live2d_path + 'waifu-tips.json',
+						//apiPath: "https://live2d.fghrsh.net/api/",
+						cdnPath: this.cdnPath,
+					})
+				})
+			}
+			// initWidget 第一个参数为 waifu-tips.json 的路径，第二个参数为 API 地址
+			// API 后端可自行搭建，参考 https://github.com/fghrsh/live2d_api
+			// 初始化看板娘会自动加载指定目录下的 waifu-tips.json
+		},
+
+		// 封装异步加载资源的方法
+		loadExternalResource(url, type) {
+			// 注意：live2d_path 参数应使用绝对路径
+			// const live2d_path =
+			//   "https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/";
+			//const live2d_path = "/live2d-widget/";
+			return new Promise((resolve, reject) => {
+				let tag
+
+				if (type === 'css') {
+					tag = document.createElement('link')
+					tag.rel = 'stylesheet'
+					tag.href = url
+				} else if (type === 'js') {
+					tag = document.createElement('script')
+					tag.src = url
+				}
+				if (tag) {
+					tag.onload = () => resolve(url)
+					tag.onerror = () => reject(url)
+					document.head.appendChild(tag)
+				}
+			})
+		},
+	},
+}
+</script>

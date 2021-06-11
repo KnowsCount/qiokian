@@ -2,18 +2,15 @@
   "name": "qiokian",
   "version": "1.0.0",
   "description": "",
-
   "main": "dist/qiokian.ssr.js",
   "browser": "dist/qiokian.esm.js",
   "module": "dist/qiokian.esm.js",
   "unpkg": "dist/qiokian.min.js",
-
   "files": [
     "dist/*",
     "src/**/*.vue"
   ],
   "sideEffects": false,
-
   "scripts": {
     "serve": "vue-cli-service serve dev/serve.js",
     "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js",
@@ -21,10 +18,7 @@
     "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
     "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife"
   },
-
-  "dependencies": {
-  },
-
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
