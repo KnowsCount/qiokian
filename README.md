@@ -1,7 +1,7 @@
 <!--
  * @Date: 08/02/2021 09.49.03 +0800
  * @Author: KnowsCount
- * @LastEditTime: 13/06/2021 11.07.42 +0800
+ * @LastEditTime: 13/06/2021 11.24.43 +0800
  * @FilePath: /qiokian/README.md
 -->
 
@@ -23,8 +23,8 @@
 
 ## 🔗 demo link
 
-[qiokian-example](https://qiokian-example.vercel.app)
-[qiokian landing page](https://qiokian-landing.vercel.app)
+-   [qiokian-example](https://qiokian-example.vercel.app)
+-   [qiokian landing page](https://qiokian-landing.vercel.app)
 
 ## 🧱 usage
 
