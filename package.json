@@ -1,6 +1,6 @@
 {
 	"name": "qiokian",
-	"version": "1.0.2",
+	"version": "2.0.2",
 	"description": "",
 	"main": "dist/qiokian.ssr.js",
 	"browser": "dist/qiokian.esm.js",
@@ -10,13 +10,31 @@
 		"dist/*",
 		"src/**/*.vue"
 	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/KnowsCount/qiokian.git"
+	},
+	"keywords": [
+		"vuejs",
+		"library",
+		"component",
+		"vue",
+		"vuejs2",
+		"component-library",
+		"lib",
+		"rollup",
+		"live2d"
+	],
+	"author": "KnowsCount <knowscount@gmail.com>",
+	"license": "WTFPL",
 	"sideEffects": false,
 	"scripts": {
 		"serve": "vue-cli-service serve dev/serve.js",
 		"build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js",
 		"build:ssr": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format cjs",
 		"build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
-		"build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife"
+		"build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife",
+		"prepublish": "npm run build"
 	},
 	"dependencies": {},
 	"devDependencies": {
