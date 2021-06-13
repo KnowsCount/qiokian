@@ -1,6 +1,6 @@
 {
 	"name": "qiokian",
-	"version": "2.0.9",
+	"version": "2.1.10",
 	"description": "",
 	"main": "dist/qiokian.ssr.js",
 	"browser": "dist/qiokian.esm.js",
@@ -48,6 +48,8 @@
 		"@vue/cli-plugin-babel": "^4.5.10",
 		"@vue/cli-service": "^4.5.10",
 		"cross-env": "^7.0.3",
+		"eslint": "^7.28.0",
+		"eslint-plugin-vue": "^7.11.1",
 		"minimist": "^1.2.5",
 		"rollup": "^2.36.1",
 		"rollup-plugin-terser": "^7.0.2",
