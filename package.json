@@ -26,7 +26,7 @@
 		"live2d"
 	],
 	"author": "KnowsCount <knowscount@gmail.com>",
-	"license": "WTFPL",
+	"license": "GPLv3",
 	"sideEffects": false,
 	"scripts": {
 		"serve": "vue-cli-service serve dev/serve.js",
