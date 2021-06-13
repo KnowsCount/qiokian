@@ -1,7 +1,7 @@
 <!--
  * @Date: 10/02/2021 20.07.50 +0800
  * @Author: KnowsCount
- * @LastEditTime: 11/06/2021 22.41.21 +0800
+ * @LastEditTime: 12/06/2021 21.46.37 +0800
  * @FilePath: /qiokian/src/qiokian.vue
 -->
 <template>
@@ -80,3 +80,7 @@ export default {
 	},
 }
 </script>
+
+<style scoped>
+@import url(https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css);
+</style>
