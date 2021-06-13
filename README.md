@@ -1,15 +1,15 @@
 <!--
  * @Date: 08/02/2021 09.49.03 +0800
  * @Author: KnowsCount
- * @LastEditTime: 13/06/2021 11.24.43 +0800
+ * @LastEditTime: 13/06/2021 12.42.58 +0800
  * @FilePath: /qiokian/README.md
 -->
 
 <img src="src/logo.png" align="right" width="100" height="100" />
 
-# qiokian - anime in Vue.js!
+# qiokian - anime in vue.js!
 
-> 🙊 live2d anime figure Vuejs component.
+> 🙊 live2d anime figure vuejs component.
 
 [![forthebadge](https://forthebadge.com/images/badges/powered-by-coders-sweat.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
@@ -17,7 +17,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/not-a-bug-a-feature.svg)](https://forthebadge.com)
 <img src="https://forthebadge.com/images/badges/works-on-my-machine.svg" height="35" />
 
-![Shishiro Botan](src/shishiro_botan.jpg)
+![shishiro botan](src/shishiro_botan.jpg)
 
 ---
 
@@ -66,6 +66,6 @@ npm run build
 
 ---
 
-Inspired by https://github.com/stevenjoezhang/live2d-widget.
+inspired by https://github.com/stevenjoezhang/live2d-widget.
 
-All forms of contribution are welcome, and yes, stars please.
+all forms of contribution are welcome, and yes, stars please.
