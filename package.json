@@ -1,6 +1,6 @@
 {
 	"name": "qiokian",
-	"version": "2.1.11",
+	"version": "2.1.13",
 	"description": "",
 	"main": "dist/qiokian.ssr.js",
 	"browser": "dist/qiokian.esm.js",
@@ -50,6 +50,7 @@
 		"cross-env": "^7.0.3",
 		"eslint": "^7.28.0",
 		"eslint-plugin-vue": "^7.11.1",
+		"husky": "^6.0.0",
 		"minimist": "^1.2.5",
 		"rollup": "^2.36.1",
 		"rollup-plugin-terser": "^7.0.2",
@@ -62,5 +63,10 @@
 	},
 	"engines": {
 		"node": ">=12"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "npm --no-git-tag-version version patch && git add ."
+		}
 	}
 }
