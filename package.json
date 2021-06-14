@@ -1,6 +1,6 @@
 {
 	"name": "qiokian",
-	"version": "2.1.10",
+	"version": "2.1.11",
 	"description": "",
 	"main": "dist/qiokian.ssr.js",
 	"browser": "dist/qiokian.esm.js",
