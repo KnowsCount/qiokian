@@ -1,6 +1,6 @@
 {
 	"name": "qiokian",
-	"version": "2.1.13",
+	"version": "2.1.14",
 	"description": "",
 	"main": "dist/qiokian.ssr.js",
 	"browser": "dist/qiokian.esm.js",
@@ -34,7 +34,8 @@
 		"build:ssr": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format cjs",
 		"build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
 		"build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife",
-		"prepublish": "npm run build"
+		"prepublish": "npm run build",
+		"prepare": "husky install"
 	},
 	"dependencies": {},
 	"devDependencies": {
