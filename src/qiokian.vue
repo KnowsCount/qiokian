@@ -1,7 +1,7 @@
 <!--
  * @Date: 10/02/2021 20.07.50 +0800
  * @Author: KnowsCount
- * @LastEditTime: 12/06/2021 21.46.37 +0800
+ * @LastEditTime: 14/06/2021 11.48.43 +0800
  * @FilePath: /qiokian/src/qiokian.vue
 -->
 <template>
@@ -41,6 +41,7 @@ export default {
 						'js'
 					),
 				]).then(() => {
+					// eslint-disable-next-line no-undef
 					initWidget({
 						waifuPath: this.live2d_path + 'waifu-tips.json',
 						//apiPath: "https://live2d.fghrsh.net/api/",
