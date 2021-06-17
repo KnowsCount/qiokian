@@ -1,8 +1,8 @@
 /*
  * @Date: 11/07/2016 16.00.01 +0800
  * @Author: KnowsCount
- * @LastEditTime: 17/06/2021 08.47.00 +0800
- * @FilePath: /qiokian/test/test.js
+ * @LastEditTime: 18/06/2021 07.26.32 +0800
+ * @FilePath: /qiokian/tests/test.js
  */
 
 /* eslint-disable no-undef */
@@ -20,7 +20,7 @@ describe('qiokian', function() {
 
 	it('should export an object', function() {
 		assert(qiokian)
-		assert.equal(typeof qiokian, 'object')
+		assert.strictEqual(typeof qiokian, 'object')
 	})
 
 	it('should throw an error when invalid args are passed', function() {
