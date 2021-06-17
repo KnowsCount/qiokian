@@ -1,6 +1,6 @@
 {
 	"name": "qiokian",
-	"version": "2.1.21",
+	"version": "2.1.22",
 	"description": "🙊 live2d anime figure vuejs component.",
 	"main": "dist/qiokian.ssr.js",
 	"browser": "dist/qiokian.esm.js",
@@ -37,7 +37,6 @@
 		"prepublish": "npm run build",
 		"prepare": "husky install"
 	},
-	"dependencies": {},
 	"devDependencies": {
 		"@babel/core": "^7.12.10",
 		"@babel/preset-env": "^7.12.11",
@@ -47,7 +46,7 @@
 		"@rollup/plugin-node-resolve": "^13.0.0",
 		"@rollup/plugin-replace": "^2.3.4",
 		"@vue/cli-plugin-babel": "^4.5.10",
-		"@vue/cli-service": "^4.5.10",
+		"@vue/cli-service": "^3.12.1",
 		"cross-env": "^7.0.3",
 		"eslint": "^7.28.0",
 		"eslint-plugin-vue": "^7.11.1",
