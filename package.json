@@ -1,6 +1,6 @@
 {
 	"name": "qiokian",
-	"version": "2.1.23",
+	"version": "2.1.24",
 	"description": "🙊 live2d anime figure vuejs component.",
 	"main": "dist/qiokian.ssr.js",
 	"browser": "dist/qiokian.esm.js",
