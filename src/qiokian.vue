@@ -1,7 +1,7 @@
 <!--
  * @Date: 10/02/2021 20.07.50 +0800
  * @Author: KnowsCount
- * @LastEditTime: 14/06/2021 11.48.43 +0800
+ * @LastEditTime: 17/06/2021 08.34.21 +0800
  * @FilePath: /qiokian/src/qiokian.vue
 -->
 <template>
@@ -54,12 +54,17 @@ export default {
 			// 初始化看板娘会自动加载指定目录下的 waifu-tips.json
 		},
 
-		// 封装异步加载资源的方法
+		/**
+		 * @description: 封装异步加载资源的方法
+		 * @param {*} url
+		 * @param {*} type
+		 * @return {*}
+		 */
 		loadExternalResource(url, type) {
 			// 注意：live2d_path 参数应使用绝对路径
 			// const live2d_path =
-			//   "https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/";
-			//const live2d_path = "/live2d-widget/";
+			//   "https://cdn.jsdelivr.net/gh/knowscount/live2d-widget@latest/";
+			// const live2d_path = "/live2d-widget/";
 			return new Promise((resolve, reject) => {
 				let tag
 

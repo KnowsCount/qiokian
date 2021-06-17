@@ -1,6 +1,6 @@
 {
 	"name": "qiokian",
-	"version": "2.1.24",
+	"version": "2.1.25",
 	"description": "🙊 live2d anime figure vuejs component.",
 	"main": "dist/qiokian.ssr.js",
 	"browser": "dist/qiokian.esm.js",
@@ -35,7 +35,8 @@
 		"build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
 		"build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife",
 		"prepublish": "npm run build",
-		"prepare": "husky install"
+		"prepare": "husky install",
+		"test": "mocha"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.12.10",
@@ -52,6 +53,7 @@
 		"eslint-plugin-vue": "^7.11.1",
 		"husky": "^6.0.0",
 		"minimist": "^1.2.5",
+		"mocha": "^9.0.0",
 		"rollup": "^2.36.1",
 		"rollup-plugin-terser": "^7.0.2",
 		"rollup-plugin-vue": "^5.1.9",
