@@ -1,6 +1,6 @@
 {
 	"name": "qiokian",
-	"version": "2.2.1",
+	"version": "2.2.2",
 	"description": "🙊 live2d anime figure vuejs component.",
 	"main": "dist/qiokian.ssr.js",
 	"browser": "dist/qiokian.esm.js",
@@ -23,7 +23,8 @@
 		"component-library",
 		"lib",
 		"rollup",
-		"live2d"
+		"live2d",
+		"i18n"
 	],
 	"author": "KnowsCount <knowscount@gmail.com>",
 	"license": "GPLv3",
