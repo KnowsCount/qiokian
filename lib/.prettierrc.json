@@ -1,0 +1,21 @@
+{
+	"semi": false,
+	"overrides": [
+		{
+			"files": "*.test.js",
+			"options": {
+				"tabWidth": 4,
+				"singleQuote": true,
+				"trailingComma": "es5"
+			}
+		},
+		{
+			"files": ["*.html", "**/*.js"],
+			"options": {
+				"tabWidth": 4,
+				"singleQuote": true,
+				"trailingComma": "es5"
+			}
+		}
+	]
+}
