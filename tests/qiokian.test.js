@@ -1,17 +1,14 @@
 /*
  * @Date: 11/07/2016 16.00.01 +0800
  * @Author: KnowsCount
- * @LastEditTime: 17/06/2021 08.47.00 +0800
- * @FilePath: /qiokian/test/test.js
+ * @LastEditTime: 19/06/2021 20.16.53 +0800
+ * @FilePath: /qiokian/tests/qiokian.test.js
  */
 
 /* eslint-disable no-undef */
 
-'use strict'
-
-require('mocha')
-var assert = require('assert')
-var qiokian = require('..')
+import qiokian from '../src/qiokian.vue'
+import assert from 'assert'
 
 describe('qiokian', function() {
 	// it('should export a function', function() {
@@ -20,7 +17,7 @@ describe('qiokian', function() {
 
 	it('should export an object', function() {
 		assert(qiokian)
-		assert.equal(typeof qiokian, 'object')
+		assert.strictEqual(typeof qiokian, 'object')
 	})
 
 	it('should throw an error when invalid args are passed', function() {
