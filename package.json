@@ -1,6 +1,6 @@
 {
 	"name": "qiokian",
-	"version": "2.2.4",
+	"version": "2.2.5",
 	"description": "🙊 live2d anime figure vuejs component.",
 	"main": "dist/qiokian.ssr.js",
 	"browser": "dist/qiokian.esm.js",
@@ -37,7 +37,7 @@
 		"build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife",
 		"prepublish": "npm run build",
 		"prepare": "husky install",
-		"test": "jest"
+		"test": "jest --collectCoverage"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.12.10",

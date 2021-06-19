@@ -22,3 +22,6 @@ yarn-error.log*
 
 # npm pack
 *.tgz
+
+# jest coverage folder
+coverage/
