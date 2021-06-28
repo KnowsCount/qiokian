@@ -1,7 +1,7 @@
 /*
  * @Date: 11/07/2016 16.00.01 +0800
  * @Author: KnowsCount
- * @LastEditTime: 20/06/2021 00.54.39 +0800
+ * @LastEditTime: 28/06/2021 20.13.38 +0800
  * @FilePath: /qiokian/tests/qiokian.test.js
  */
 
@@ -23,12 +23,11 @@ describe('qiokian', function() {
 		})
 	})
 
-	const wrapper = shallowMount(qiokian)
-	it('should contain a <button> & <div> element', function() {
-		// expect(wrapper.find('button')).toExist()
-		// The expect assertion was handed over to the Jest team, who in their infinite wisdom, created a new API.
+	it('should contain a <button> & <div> element', () => {
+		const wrapper = shallowMount(qiokian)
 		expect(wrapper.find('button')).toBeTruthy()
 		expect(wrapper.find('div')).toBeTruthy()
+		wrapper.destroy()
 	})
 
 	// if (screen.width < 768) {
