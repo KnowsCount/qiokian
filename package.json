@@ -1,6 +1,6 @@
 {
 	"name": "qiokian",
-	"version": "2.2.13",
+	"version": "2.2.14",
 	"description": "🙊 live2d anime figure vuejs component.",
 	"main": "dist/qiokian.ssr.js",
 	"browser": "dist/qiokian.esm.js",
@@ -63,8 +63,7 @@
 		"rollup-plugin-vue": "^5.1.9",
 		"vue": "^2.6.12",
 		"vue-jest": "^3.0.7",
-		"vue-template-compiler": "^2.6.12",
-		"vue-test-utils": "^1.0.0-beta.11"
+		"vue-template-compiler": "^2.6.12"
 	},
 	"peerDependencies": {
 		"vue": "^2.6.12"
