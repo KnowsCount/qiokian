@@ -1,7 +1,7 @@
 /*
  * @Date: 11/07/2016 16.00.01 +0800
  * @Author: KnowsCount
- * @LastEditTime: 28/06/2021 20.13.38 +0800
+ * @LastEditTime: 03/07/2021 17.47.17 +0800
  * @FilePath: /qiokian/tests/qiokian.test.js
  */
 
@@ -30,10 +30,10 @@ describe('qiokian', function() {
 		expect(wrapper.find('div')).toBeTruthy()
 	})
 
-	it("renders correctly", () => {
+	it('renders correctly', () => {
 		expect(wrapper.html()).toMatchSnapshot()
 		wrapper.destroy()
-	});
+	})
 
 	// if (screen.width < 768) {
 	// 	expect(wrapper.find('button')).toBeFalsy()
