@@ -28,11 +28,11 @@ describe('qiokian', function() {
 	it('should contain a <button> & <div> element', () => {
 		expect(wrapper.find('button')).toBeTruthy()
 		expect(wrapper.find('div')).toBeTruthy()
-		wrapper.destroy()
 	})
 
 	it("renders correctly", () => {
 		expect(wrapper.html()).toMatchSnapshot()
+		wrapper.destroy()
 	});
 
 	// if (screen.width < 768) {
